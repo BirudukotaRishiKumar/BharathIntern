@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Content Management Tool</title>
+  <link rel="stylesheet" type="text/css" href="../index.css" media="screen" />
+  <script src="index.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/19c75da57a.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="top-section">
+    <div class="top">
+      <h1>Content Management Tool</h1>
+      <img src="https://img.freepik.com/free-vector/flat-design-content-management-system-illustrated_23-2148816268.jpg?w=740&t=st=1688131903~exp=1688132503~hmac=a0a04e606c8c33ad6e36e4f476ec912754f5b0102e210ad4b7030c6ab156fb85"/>
+    </div>
+  
+    <div class="card">
+      <div class="input-section">
+        <b><label for="title">Title:</label></b> <br/>
+        <input class="input" type="text" id="title" placeholder="Enter title">  <br/>
+        <b><label for="content">Content:</label></b>  <br/>
+        <input class="input" id="content" placeholder="Enter content"/>
+      </div>
+  
+      <div class="input-section">
+        <b><label class="label-section" for="image">Image:</label></b>
+        <input type="file" id="image" accept="image/*">
+      </div>
+  
+      <div class="input-section">
+        <b><label class="label-section" for="video">Video:</label></b>
+        <input type="file" id="video" accept="video/*">
+      </div>
+    </div>
+  </div>
+
+  <div class="button-section">
+    <button onclick="submitForm()">Submit</button>
+  </div>
+
+  <div class="data-container">
+    <div class="data-section" id="dataSection">
+    </div>
+  </div>
+</body>
+
+</html>
